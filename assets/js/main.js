@@ -3,13 +3,21 @@
 // The second idea is create an algorithm to give user predictions about the money and future wins
 // I will add gas fees, and some other stuffs in order to do everything correctly
 
-
+// I will explain the JS code in order to be understandable:
+/*
+    1) Variables declaration
+        a) first alert
+    2) Functions declaration
+        a) user register
+        b) gas fee calculator
+*/
 
 
 // ---------------------------- VARIABLES ---------------------------- 
 alert("Our coins are: Bitcoin - Etherum - Solana - Uniswap - Sandbox");
 let coin = prompt("Please select your coin");
 console.log(coin);
+
 let bitCoin = 49760;
 let etherumCoin = 3760;
 let solanaCoin = 195;
@@ -18,7 +26,50 @@ let sandboxCoin = 6.09;
 let dolarValue = 204;
 
 
+// ---------------------------- CLASSES ---------------------------- 
+// Creating class for user data registration
+class User {
+    constructor(name, lastName, age, country, city, address){
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age;
+        this.country = country;
+        this.city = city;
+        this.address = address;
+    };
+};
+class CryptoData {
+    constructor(cryptoCoin, cryptoDollars, cryptoAmount, cryptoFee, cryptoPrice) {
+        this.cryptoCoin = cryptoCoin;
+        this.cryptoDollars = cryptoDollars;
+        this.cryptoAmount = cryptoAmount;
+        this.cryptoFee = cryptoFee;
+        this.cryptoPrice = cryptoPrice;
+    };
+};
+
+
+
 // ---------------------------- FUNCTIONS ---------------------------- 
+const register = () => {
+    //Starting message
+    alert("Before start the coins transaction, you need to register in our app. So, please complete the following information");
+
+    // Starting data registration in object
+    const user1 = new User(
+        prompt("Add your name").toLowerCase().trim(),
+        prompt("Add your last name").toLowerCase().trim(),
+        parseInt(prompt("Add your age").trim()),
+        prompt("Add your country").toLowerCase().trim(),
+        prompt("Add your city").toLowerCase().trim(),
+        prompt("Add your address").toLowerCase().trim()
+    );
+    console.log("The user data registration it's: ");
+    console.log(user1);
+    return user1;
+};
+
+
 // Adding gas fee function
 // JIC: gas fee will be 6% of the coin amount. Doesn't matter which coin. 
 const gasfeeCalculator = (x) => {
@@ -34,6 +85,7 @@ const coinDollarsValidator = (e) =>{
         e = parseInt(prompt(`Add value in dollars to buy ${coin}`));
     };
 };
+
 
 // Adding cryptos calculator
 const bitCoinCalculator  = () => {
@@ -51,7 +103,18 @@ const bitCoinCalculator  = () => {
         // Final cripto value [converted with validators and gas fees]
         let finalPrice = natoshiSaka - gasfeeCalculator(natoshiSaka);
         alert(`Instead of ${natoshiSaka}, you will receive ${finalPrice} coins due to Gas Fee transactions`); 
+        // Class registration
+        const cryptoBtc = new CryptoData(
+            coin,
+            coinQuantity,
+            bitCoinAmmount,
+            gasfeeCalculator(natoshiSaka),
+            finalPrice
+        );
+        console.log("The crypto data it's: ");
+        console.log(cryptoBtc);
     };
+
 };
 const etherumCalculator = () => {
     if (coin === "Etherum") {
@@ -68,6 +131,16 @@ const etherumCalculator = () => {
         // Final cripto value [converted with validators and gas fees]
         let finalPrice = natoshiSaka - gasfeeCalculator(natoshiSaka);
         alert(`Instead of ${natoshiSaka}, you will receive ${finalPrice} coins due to Gas Fee transactions`); 
+        // Class registration
+         const cryptoBtc = new CryptoData(
+            coin,
+            coinQuantity,
+            ethCoinAmmount,
+            gasfeeCalculator(natoshiSaka),
+            finalPrice
+        );
+        console.log("The crypto data it's: ");
+        console.log(cryptoBtc);
     };
 };
 const solanaCalculator = () => {
@@ -85,6 +158,16 @@ const solanaCalculator = () => {
         // Final cripto value [converted with validators and gas fees]
         let finalPrice = natoshiSaka - gasfeeCalculator(natoshiSaka);
         alert(`Instead of ${natoshiSaka}, you will receive ${finalPrice} coins due to Gas Fee transactions`); 
+        // Class registration
+        const cryptoBtc = new CryptoData(
+            coin,
+            coinQuantity,
+            solCoinAmmount,
+            gasfeeCalculator(natoshiSaka),
+            finalPrice
+        );
+        console.log("The crypto data it's: ");
+        console.log(cryptoBtc);
     };
 };
 const uniCalculator = () => {
@@ -102,6 +185,15 @@ const uniCalculator = () => {
         // Final cripto value [converted with validators and gas fees]
         let finalPrice = natoshiSaka - gasfeeCalculator(natoshiSaka);
         alert(`Instead of ${natoshiSaka}, you will receive ${finalPrice} coins due to Gas Fee transactions`); 
+        const cryptoBtc = new CryptoData(
+            coin,
+            coinQuantity,
+            uniCoinAmmount,
+            gasfeeCalculator(natoshiSaka),
+            finalPrice
+        );
+        console.log("The crypto data it's: ");
+        console.log(cryptoBtc);
     };
 };
 const sandboxCalculator = () => {
@@ -119,6 +211,15 @@ const sandboxCalculator = () => {
         // Final cripto value [converted with validators and gas fees]
         let finalPrice = natoshiSaka - gasfeeCalculator(natoshiSaka);
         alert(`Instead of ${natoshiSaka}, you will receive ${finalPrice} coins due to Gas Fee transactions`); 
+        const cryptoBtc = new CryptoData(
+            coin,
+            coinQuantity,
+            sandboxCoinAmmount,
+            gasfeeCalculator(natoshiSaka),
+            finalPrice
+        );
+        console.log("The crypto data it's: ");
+        console.log(cryptoBtc);
     };
 };
 
@@ -133,7 +234,7 @@ const coinValidator = () =>  {
         uniCalculator();
         sandboxCalculator();
     } else {
-        alert("You didn't want to continue. Please try again");
+        alert("You didn't want to continue. Please refresh the site and try again");
     };
 };
 const coinValidatorFalse = () => {
@@ -143,11 +244,9 @@ const coinValidatorFalse = () => {
 };
 
 
-
-
-
 // ---------------------------- PROGRAM ---------------------------- 
 if((coin === "Bitcoin" || coin === 'Etherum' || coin === "Solana" || coin === "Uniswap" || coin === "Sandbox")) {
+    register();
     coinValidator();
 } else {
     coinValidatorFalse();
