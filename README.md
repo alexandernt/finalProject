@@ -23,5 +23,15 @@ Calcular tiempo de espera promedio en relación a la cantidad de turnos registra
 Calcular edad promedio de personas registradas.
 Calcular nota final de alumnos ingresados.
 
+# CLASE 5 - Segunda parte del proyecto - Agregar objetos y métodos
+
+>> Consigna: A partir de los ejemplos mostrados la primera clase, y en función del tipo de simulador que hayas elegido, deberás:
+Crear al menos un objeto para controlar el funcionamiento de tu simulador.
+Incorporarle sus propiedades y su constructor.
+Invocar a ese objeto en algún momento donde el usuario realice alguna acción.
+Utilizar sus mètodos.
+
+
+
 ✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅
 
