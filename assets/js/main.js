@@ -5,6 +5,7 @@
 
 // I will explain the JS code in order to be understandable:
 /*
+    i'm working on this
     1) Variables declaration
         a) first alert
     2) Functions declaration
@@ -37,6 +38,9 @@ class User {
         this.city = city;
         this.address = address;
     };
+    userInfo(){
+        console.log(`${this.name} ${this.lastName} is the user. He/she has ${this.age} years old and lives in ${this.country}`);
+    }
 };
 class CryptoData {
     constructor(cryptoCoin, cryptoDollars, cryptoAmount, cryptoFee, cryptoPrice) {
@@ -45,6 +49,9 @@ class CryptoData {
         this.cryptoAmount = cryptoAmount;
         this.cryptoFee = cryptoFee;
         this.cryptoPrice = cryptoPrice;
+    };
+    cryptoInfo(){
+        console.log(`the user has spent ${this.cryptoDollars} dollars, which are ${this.cryptoPrice} ${this.cryptoCoin}`);
     };
 };
 
@@ -66,7 +73,7 @@ const register = () => {
     );
     console.log("The user data registration it's: ");
     console.log(user1);
-    return user1;
+    user1.userInfo();
 };
 
 
@@ -113,6 +120,7 @@ const bitCoinCalculator  = () => {
         );
         console.log("The crypto data it's: ");
         console.log(cryptoBtc);
+        cryptoBtc.cryptoInfo();
     };
 
 };
@@ -141,6 +149,7 @@ const etherumCalculator = () => {
         );
         console.log("The crypto data it's: ");
         console.log(cryptoBtc);
+        cryptoBtc.cryptoInfo();
     };
 };
 const solanaCalculator = () => {
@@ -168,6 +177,7 @@ const solanaCalculator = () => {
         );
         console.log("The crypto data it's: ");
         console.log(cryptoBtc);
+        cryptoBtc.cryptoInfo();
     };
 };
 const uniCalculator = () => {
@@ -194,6 +204,7 @@ const uniCalculator = () => {
         );
         console.log("The crypto data it's: ");
         console.log(cryptoBtc);
+        cryptoBtc.cryptoInfo();
     };
 };
 const sandboxCalculator = () => {
@@ -220,6 +231,7 @@ const sandboxCalculator = () => {
         );
         console.log("The crypto data it's: ");
         console.log(cryptoBtc);
+        cryptoBtc.cryptoInfo();
     };
 };
 
