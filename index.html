@@ -6,26 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style/stylesheet.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
 </head>
 <body>
     <header id="header">
         <nav id="nav">
+            <div class="nav__btn-logo flex">
+                <div class="nav__btns">
+                    <div class="box grid">
+                        <div class="box1"></div>
+                        <div class="box2"></div>
+                        <div class="box3"></div>
+                    </div>
+                </div>
+                <div class="nav__logo" id="nav-logo">
+                    <span>valmigo</span>
+                </div>
+            </div>
             <nav class="nav__menu" id="nav__menu">
                 <ul class="nav__list">
-                    <li class="nav__item">
-                        Coins
+                    <li class="nav__item grid">
+                       <a href="" class="nav__link">Prices</a> 
                     </li>
-                    <li class="nav__item">
-                        Coins Convertor
+                    <li class="nav__item grid">
+                        <a href="" class="nav__link">Trade</a> 
+                        <i class="uil uil-angle-down"></i>
                     </li>
-                    <li class="nav__item">
-                        How it works
+                    <li class="nav__item grid">
+                        <a href="" class="nav__link">Portfolio</a> 
+                        <i class="uil uil-angle-down"></i>
                     </li>
-                    <li class="nav__item">
-                        About us
-                    </li>
-                    <li class="nav__item">
-                        Contact
+                    <li class="nav__item grid">
+                        <a href="" class="nav__link">NFT (new!)</a> 
+                        <i class="uil uil-angle-down"></i>
                     </li>
                 </ul>
             </nav>
@@ -33,38 +47,120 @@
     </header>
     <main class="main">
 
-        <section class="home" id="home">
-            <div class="home__intro">
-                <h1>Valmigo is a Coins Convertor</h1>
-                <h4>We will show our availabe coins, and you can do all kind of convertions</h4>
+        <section class="home grid" id="home">
+            <img src="./assets/img/home.svg" class="home-img" alt="">
+            <div>
+                <div class="home__intro">
+                    <h1 class="">Buy cryptos with valmigo</h1>
+                    <p>We will show you all the available coins, you can buy and sell totally free</p>
+                </div>
+                <div class="home__btn flex">
+                    <button class="btn home__info-btn"><a href="#coins">Crypto Prices</a> <i class="uil uil-arrow-right home__arrow"></i> </button>
+                </div>
             </div>
             
+            
+        </section>
+
+        <section class="valmigo" id="valmigo">
+            <div class="content">
+                <h1 class="valmigo__title">
+                    About valmigo
+                </h1>
+                <div class="vamlmigo__grid grid">
+                    <div class="valmigoBox grid">
+                        <div class="valmigo__img">
+                            <img src="./assets/img/valmigo.svg" class="valmigo-img" alt="">
+                        </div>
+                        <div class="valmigo__text">
+                            <p>Valmigo's an app created in etherum blockchain</p>
+                        </div>
+                    </div>
+                    <div class="valmigoBox grid">
+                        <div class="valmigo__img">
+                            <img src="./assets/img/money.svg" class="valmigo-img valmigo__fix" alt="">
+                        </div>
+                        <div class="valmigo__text">
+                            <p>You are owner of your money, none centralized entity regularize your $</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="valmigo__extra">
+                    <img src="/assets/img/quotation.svg" class="valmigo__quotation" alt="">
+                    <p>Valmigo is a crypto trend simulator. It has been created for <span class="coderColors">Coderhouse</span> final project and it's not an official app</p>
+                    <a target="blank" href="https://www.coderhouse.com/"><img src="/assets/img/logoCoder.png" class="coderLogo grid"alt="" ></a>
+                    <a target="blank" href="https://github.com/alexandernt/final_project_Tisko"><img src="/assets/img/github.svg" alt="" class="coderLogo"></a> <br> <span>Check code</span>
+                </div>
+                
+            </div>
         </section>
 
         <section class="coins" id="coins">
             <h1 class="coins__title section__title">
-                Our coints are
+                Crypto prices
             </h1>
-            <div class="coins__intro">
-                <div class="coins__items">
-                    <h4>BitCoin</h4>
-                    <p class="coins__value">$49.760</p>
+            <div class="coins__intro grid">
+
+                <div class="coins__items grid">
+                    <div class="coins__box1">
+                        <h4>BitCoin</h4>
+                        <p class="coins__value">$49.760</p>
+                    </div>
+                    
+                    <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/1.svg" alt="bitcoin-7d-price-graph" class="coins__img" loading="lazy">
+
+                    <div class="coins__item-btn">
+                        <button class="coins__btn btc__btn">Buy</button>
+                    </div>
                 </div>
-                <div class="coins__items">
-                    <h4>Etherum</h4>
-                    <p class="coins__value">$3.760</p>
+                <div class="coins__items grid">
+                    <div class="coins__box1">
+                        <h4>Etherum</h4>
+                        <p class="coins__value">$3.760</p>
+                    </div>
+                    
+                    <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/1027.svg" alt="ethereum-7d-price-graph" class="coins__img " loading="lazy">
+
+                    <div class="coins__item-btn">
+                        <button class="coins__btn eth__btn">Buy</button>
+                    </div>
                 </div>
-                <div class="coins__items">
-                    <h4>Solana</h4>
-                    <p class="coins__value">$195</p>
+                <div class="coins__items grid">
+                    <div class="coins__box1">
+                        <h4>Solana</h4>
+                        <p class="coins__value">$195</p>
+                    </div>
+                    
+                    <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/5426.svg" alt="solana-7d-price-graph" class="coins__img " loading="lazy">
+
+                    <div class="coins__item-btn">
+                        <button class="coins__btn sol__btn">Buy</button>
+                    </div>
                 </div>
-                <div class="coins__items">
-                    <h4>Uniswap</h4>
-                    <p class="coins__value">$17.55</p>
+                <div class="coins__items grid">
+                    <div class="coins__box1">
+                        <h4>Uniswap</h4>
+                        <p class="coins__value">$17.55</p>
+                    </div>
+                    
+                    <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/7083.svg" alt="uniswap-7d-price-graph" class="coins__img " loading="lazy">
+
+                    <div class="coins__item-btn">
+                        <button class="coins__btn uni__btn">Buy</button>
+                    </div>
                 </div>
-                <div class="coins__items">
-                    <h4>Sandbox</h4>
-                    <p class="coins__value">$6.09</p>
+                <div class="coins__items grid">
+                    <div class="coins__box1">
+                        <h4>Sandbox</h4>
+                        <p class="coins__value">$6.09</p>
+                    </div>
+                    
+                    <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/6210.svg" alt="the-sandbox-7d-price-graph" class="coins__img " loading="lazy">
+
+                    <div class="coins__item-btn">
+                        <button class="coins__btn sand__btn">Buy</button>
+                    </div>
                 </div>
             </div>
         </section>
