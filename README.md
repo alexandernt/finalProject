@@ -42,7 +42,7 @@ Utilizar algunos de los métodos o propiedades vistos en la clase.
 
 ## Comentario de esta tarea: 
 
-El array agregado está en la línea de JS 233 - 247; basícamente es un array donde declaramos nuestras coins y le preguntamos al usuarix si quiere agregar alguna otra cryptomoneda a nuestro mercado (esto luego va a ser pensado de una mejor manera para la final app). 
+El array agregado está en la línea de JS 233 - 247; basícamente es un array donde declaramos nuestras coins y le preguntamos al usuarix si quiere agregar alguna otra criptomoneda a nuestro mercado (esto luego va a ser pensado de una mejor manera para la final app). 
 
 let ourCoins = [
   "Bitcoin",
@@ -62,6 +62,10 @@ const ourCoinsFeedback = () => {
 # PRIMERA ENTREGA OFICIAL DE PROYECTO FINAL
 
 ## Aclaraciones: 
+
+- Para interactuar con toda la parte de JS solicitada, se debe hacer click en los botones Buy de cada criptomoneda en la sección Crypto prices
+
+![Screenshot](https://user-images.githubusercontent.com/84801914/149342554-88e62702-f57f-475c-b85a-1083e430223a.png)
 
 - La estructura HTML y CSS están trabajandose. Es decir, al realizar esta primera entrega se va a ver que todavía las cosas no tienen un orden, al ir pasando las entregas se irá mejorando. 
 - La estructura JS está OKAY para la primer entrega cumpliendo los siguientes términos: 
