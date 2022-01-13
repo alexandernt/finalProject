@@ -23,6 +23,7 @@ Calcular tiempo de espera promedio en relación a la cantidad de turnos registra
 Calcular edad promedio de personas registradas.
 Calcular nota final de alumnos ingresados.
 
+
 # CLASE 5 - Segunda parte del proyecto - Agregar objetos y métodos
 
 >> Consigna: A partir de los ejemplos mostrados la primera clase, y en función del tipo de simulador que hayas elegido, deberás:
@@ -32,6 +33,55 @@ Invocar a ese objeto en algún momento donde el usuario realice alguna acción.
 Utilizar sus mètodos.
 
 
+# CLASE 6 - Segunda parte del proyecto - Agregar Arrays y métodos
 
-✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅
+>> Consigna: Traslada al proyecto integrador el concepto de objetos, visto en la clase de hoy. A partir de los ejemplos mostrados la primera clase, y en función del tipo de simulador que hayas elegido, deberás:
+Incorporar al menos un Array en tu proyecto.
+Utilizar algunos de los métodos o propiedades vistos en la clase.
+
+
+## Comentario de esta tarea: 
+
+El array agregado está en la línea de JS 233 - 247; basícamente es un array donde declaramos nuestras coins y le preguntamos al usuarix si quiere agregar alguna otra cryptomoneda a nuestro mercado (esto luego va a ser pensado de una mejor manera para la final app). 
+
+let ourCoins = [
+  "Bitcoin",
+  "Etherum",
+  "Solana",
+  "Uniswap",
+  "Sandbox"
+];
+
+const ourCoinsFeedback = () => {
+  let pushCoin = prompt("Write a crypto coin that you want to add to our market");
+  ourCoins.push(pushCoin);
+  console.log(ourCoins);
+}; 
+
+
+# PRIMERA ENTREGA OFICIAL DE PROYECTO FINAL
+
+## Aclaraciones: 
+
+- La estructura HTML y CSS están trabajandose. Es decir, al realizar esta primera entrega se va a ver que todavía las cosas no tienen un orden, al ir pasando las entregas se irá mejorando. 
+- La estructura JS está OKAY para la primer entrega cumpliendo los siguientes términos: 
+
+>>Objetivos Generales:
+Codificar la funcionalidad inicial del simulador. 
+Identificar el flujo de trabajo del script en términos de captura de entradas ingresadas por el usuario, procesamiento esencial del simulador y notificación de resultados en forma de salida.
+
+>>Objetivos Específicos:
+- Capturar entradas mediante prompt(). ✅
+- Declarar variables y objetos necesarios para simular el proceso seleccionado. ✅
+- Crear funciones y/o métodos para realizar operaciones (suma, resta, concatenación, división, porcentaje, etc). ✅
+- Efectuar una salida, que es el resultado de los datos procesados, la cual puede hacerse por alert() o console.log(). ✅
+- Estructura HTML del proyecto. ✅
+- Variables de JS necesarias. ✅
+- Funciones esenciales del proceso a simular. ✅
+- Objetos de JS. ✅
+
+
+
+
+
 
