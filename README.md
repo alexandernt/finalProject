@@ -4,7 +4,7 @@ This is the final project for Coderhouse Javascript course
 ## App objective
 Esta aplicación va a ser una calculadora de critpomonedas. Obviamente, no van a estar todas, unicamente seleccionaremos un par, como funciona LemonCash. La idea es que convierta el valor, cargue los gas fee, comisión, etc. 
 
-# CLASE 4 - Primera parte del proyecto
+# CLASE 4 - Comenzar idea proyecto final + funciones
 
 >> Consigna: Con los conocimientos vistos hasta el momento, empezarás a armar la estructura inicial de tu proyecto integrador. A partir de los ejemplos mostrados la primera clase, deberás:
 Pensar el alcance de tu proyecto: ¿usarás un cotizador de seguros? ¿un simulador de créditos? ¿un simulador personalizado?
@@ -24,7 +24,7 @@ Calcular edad promedio de personas registradas.
 Calcular nota final de alumnos ingresados.
 
 
-# CLASE 5 - Segunda parte del proyecto - Agregar objetos y métodos
+# CLASE 5 - Agregar objetos y métodos
 
 >> Consigna: A partir de los ejemplos mostrados la primera clase, y en función del tipo de simulador que hayas elegido, deberás:
 Crear al menos un objeto para controlar el funcionamiento de tu simulador.
@@ -33,7 +33,7 @@ Invocar a ese objeto en algún momento donde el usuario realice alguna acción.
 Utilizar sus mètodos.
 
 
-# CLASE 6 - Segunda parte del proyecto - Agregar Arrays y métodos
+# CLASE 6 - Agregar Arrays y métodos
 
 >> Consigna: Traslada al proyecto integrador el concepto de objetos, visto en la clase de hoy. A partir de los ejemplos mostrados la primera clase, y en función del tipo de simulador que hayas elegido, deberás:
 Incorporar al menos un Array en tu proyecto.
