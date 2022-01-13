@@ -70,11 +70,14 @@ const ourCoinsFeedback = () => {
 - La estructura HTML y CSS están trabajandose. Es decir, al realizar esta primera entrega se va a ver que todavía las cosas no tienen un orden, al ir pasando las entregas se irá mejorando. 
 - La estructura JS está OKAY para la primer entrega cumpliendo los siguientes términos: 
 
->>Objetivos Generales:
+
+# OBJETIVOS DE PRIMERA ENTREGA
+
+## Objetivos Generales:
 Codificar la funcionalidad inicial del simulador. 
 Identificar el flujo de trabajo del script en términos de captura de entradas ingresadas por el usuario, procesamiento esencial del simulador y notificación de resultados en forma de salida.
 
->>Objetivos Específicos:
+## Objetivos Específicos:
 - Capturar entradas mediante prompt(). ✅
 - Declarar variables y objetos necesarios para simular el proceso seleccionado. ✅
 - Crear funciones y/o métodos para realizar operaciones (suma, resta, concatenación, división, porcentaje, etc). ✅
