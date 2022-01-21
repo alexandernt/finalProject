@@ -88,7 +88,23 @@ Identificar el flujo de trabajo del script en términos de captura de entradas i
 - Objetos de JS. ✅
 
 
+# CLASE 8 - INTERACTUAR CON HTML - DOM
 
+>> Consigna:  Traslada al proyecto integrador el concepto de objetos, visto en la clase de hoy. En función del tipo de simulador que hayas elegido, deberás:
+Crear elementos manipulando el DOM a partir de la informaciòn de tus objetos.
+Modificar etiquetas existentes en función del resultado de operaciones.
+
+## 1 Interactuar comprand BTC
+
+![asd](https://user-images.githubusercontent.com/84801914/150454722-c6a4dea5-07ad-4961-b373-3f549da66ec4.png)
+
+## 2 Se agrega la info de la compra
+
+![asdasd1](https://user-images.githubusercontent.com/84801914/150454733-03ed60d8-e1d3-4860-a1ab-5183f5842341.png)
+
+## 3 Se interactua con el botón para modificar dicha información
+
+![asdasd2](https://user-images.githubusercontent.com/84801914/150454740-be034321-d8d9-45eb-bad0-920a1f4da4d2.png)
 
 
 
