@@ -15,6 +15,6 @@ app.use(router);
 
 
 //Port
-app.listen(port, "192.168.0.46" || "localhost" ,() => {
+app.listen(port() => {
     console.log(`Example app listening at http://localhost:${port}`)
 });
