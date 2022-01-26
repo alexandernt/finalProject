@@ -119,7 +119,7 @@ Capturar la tecla ENTER para confirmar alguna acción.
 
 ## Aclaraciones
 
-Interactuar por el momento solo cambiando Etherums a otras monedas, es decir el option 1 dejarlo en etherum. 
+Interactuar por el momento solo de Bitcoin a otras monedas, es decir el option 1 dejarlo en bitcoin y solo cambiar valores de abajo. 
 Cuando se ingrese el valor y se haga click, se va a agregar el valor convertido a un div abajo.
 Si se hace click en enter se muestra un alert informando que se apreto enter. Acá necesito saber cómo puedo importar ese código para usarlo en addEventListener('click) y ('keypress'). Probe con type="modules". Lo agregue a mi archivo package.json, pero me tira que require no se acepta y también probe cambiando mi archivo a ES6 para usar import {asdas} from './', **pero tampoco me funcaaaaa** :'(  😒😒😒😒😒
 
