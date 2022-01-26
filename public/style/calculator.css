@@ -38,6 +38,26 @@
 input {
     text-align: center;
 }
+::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #F0F0F0;
+    opacity: 1; /* Firefox */
+    text-align: center;
+  }
+::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #F0F0F0;
+    opacity: 1; /* Firefox */
+    text-align: center;
+  }
+:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #F0F0F0;
+    opacity: 1; /* Firefox */
+    text-align: center;
+  }
+::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #F0F0F0;
+    opacity: 1; /* Firefox */
+    text-align: center;
+  }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #F0F0F0;
     opacity: 1; /* Firefox */

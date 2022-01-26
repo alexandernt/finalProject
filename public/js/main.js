@@ -3,8 +3,47 @@ const ethBtn = document.querySelector(".eth__btn");
 const solBtn = document.querySelector(".sol__btn");
 const uniBtn = document.querySelector(".uni__btn");
 const sandBtn = document.querySelector(".sand__btn");
-let addText = document.getElementById("addingObject")
+let addText = document.getElementById("addingObject");
 
+
+
+
+let userLoged = localStorage.getItem('userLogedIn');
+let navLogin = document.querySelector('.nav__loged');
+let navRegistered = document.querySelector('.nav__registered');
+let navLogOut= document.querySelector('.btn__logOut');
+let navProfile = document.querySelector('.nav__profile');
+
+const logedValidator = function logedInValidator() {
+  if(userLoged === "true"){
+      navLogin.classList.add('nav__login-hide');
+      navRegistered.classList.add('nav__login-hide');
+  } else {
+    navProfile.classList.add('nav__login-hide');
+    navLogOut.classList.add('nav__login-hide');
+  }
+};
+logedValidator();
+
+const checkLoged = function () {
+  if(userLoged === "true"){
+      navLogin.classList.add('nav__login-hide');
+      navRegistered.classList.add('nav__login-hide')
+  };
+};
+checkLoged();
+
+const logOut = function () {
+    navLogOut.addEventListener('click', () =>{
+        localStorage.removeItem('userLogedIn');
+        localStorage.setItem('userLogedIn', false);
+    });
+};
+logOut();
+
+
+
+// IMPORTING MODULES 
 let bitCoin = 49760;
 let etherumCoin = 3760;
 let solanaCoin = 195;
@@ -316,6 +355,7 @@ const ourCoinsFeedback = () => {
 
 
 
+
 btcBtn.addEventListener("click", () => {
   register();
   bitCoinCalculator();
@@ -343,8 +383,6 @@ sandBtn.addEventListener('click', () =>{
     sandboxCalculator();
     ourCoinsFeedback();
 });
-
-
 
 
 

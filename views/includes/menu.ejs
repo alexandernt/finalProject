@@ -23,9 +23,6 @@
                 <a method="POST" action="/calculator" href="/calculator" class="nav__link">Cripto Calculator</a> 
             </li>
             <li class="nav__item flex">
-                <a href="" class="nav__link">Portfolio</a> 
-            </li>
-            <li class="nav__item flex">
                 <a href="" class="nav__link">Trade</a> 
                 <i class="uil uil-angle-down nav__angle-down angleDown1"></i>
             </li>
@@ -56,12 +53,19 @@
         </ul>
 
         <div class="nav__account-general">
-            <div class="nav__account grid">
-                <a href="" class="nav__login">Login</a>
+            <div class="nav__account nav__loged grid">
+                <a method="POST" action="/login" href="/login" class="nav__login">Login</a>
             </div>
-            <div class="nav__account grid">
-                <a href="" class="nav__login">Register</a>
+            <div class="nav__account nav__registered grid">
+                <a method="POST" action="/register" href="/register" class="nav__login">Register</a>
+            </div>
+            <div class="nav__account nav__profile grid">
+                <a method="POST" action="/dashboard" href="/dashboard"   class="nav__login">My Profile</a>
+            </div>
+            <div class="nav__account nav__logOut grid">
+                <a method="POST" action="/login" href="/login" class="nav__login btn__logOut">Log Out</a>
             </div>
         </div>
     </nav>
 </nav>
+

@@ -80,6 +80,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -106,10 +107,9 @@ body {
 main {
     position: relative;
     z-index: var(--z-tooltip);
-    background-color: ;
+
     padding-top: 2.5rem;
     color: var(--text-color);
-   
 }
 
 html {
@@ -134,7 +134,7 @@ h4 {
 }
 
 img {
-    max-width: 100 % ;
+    max-width: 100% ;
     height: auto;
 }
 
@@ -145,6 +145,9 @@ button {
 p {
     font-size: var(--normal-font-size);
 }
+
+
+
 
 /*= === === === === === === = LAYOUT === === === === === === == */
 .section__title{
@@ -160,11 +163,14 @@ p {
     font-weight: 550;
     letter-spacing: 0.05rem;
     box-shadow: 6px 6px 0 0 #1d1d1d3f;
+    color: #F0F0F0;
+    
   } 
 
 .btn a {
     color: var(--body-color);
 }
+
   
 /*==================== NAV ====================*/
 header{
@@ -466,15 +472,107 @@ header{
 /*==================== PORTFOLIO ====================*/
 
 
-/*==================== PROJECT IN MIND ====================*/
+/*==================== DASHBOARD ====================*/
+.nav__login-hide{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.btn__logOut{
+    cursor: pointer;
+}
+/*==================== LOGIN ====================*/
+.login{
+    margin-top: 2rem;
+}
+.login__showPw{
+   margin-top: 1rem;
+    
+}
+.login__showPw span{
+    cursor: pointer;
+    align-items: center;
+}
+.login__showPw img{
+    margin-left: .2rem;
+    width: 20px;
+}
+/*==================== REGISTER ====================*/
+.register{
+    margin-top: 2rem;
+}
+.register__form,
+.login__form{
+   width: 100%;
+   padding: .5rem .5rem;
+   margin-top: 1rem;
+}
+.register__form div{
+    margin-bottom: .5rem;
+}
+
+.registerIntro h1{
+    text-align: center;
+    margin-bottom: .5rem; 
+}
+.registerIntro p{
+    text-align: center;
+}
+
+.register__contentName,
+.register__password,
+.login__contentName{
+    gap: 1rem;
+    
+}
+.register__label{
+    font-size: var(--small-font-size);
+}
+.register__input,
+.login__input{
+    padding: 20px;
+    width: 100%;
+}
+.register__input::-webkit-input-placeholder{
+    font-size: 1.1rem;
+}
+.register__input::-moz-placeholder{
+    font-size: 1.1rem;
+}
+.register__input:-ms-input-placeholder{
+    font-size: 1.1rem;
+}
+.register__input::-ms-input-placeholder{
+    font-size: 1.1rem;
+}
+.register__input::placeholder{
+    font-size: 1.1rem;
+}
+
+.register__input:focus{
+    outline-style: none;
+	box-shadow: 2px 2px 4px var(--text-color);
+	border-color: var(--text-color); 
+    
+}
+.register__btn{
+    margin: 1rem 0;
+}
+.register__btn button{
+    width: 100%;
+    margin-bottom: 1rem;
+}
 
 
-/*==================== TESTIMONIAL ====================*/
 
-
-/*==================== CONTACT ME ====================*/
-
-
+.errorMsg{
+    background-color: red;
+    color: #F0F0F0;
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
 /*==================== FOOTER ====================*/
 .footer{
     background-color: var(--text-color);
