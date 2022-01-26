@@ -107,4 +107,32 @@ Modificar etiquetas existentes en función del resultado de operaciones.
 ![asdasd2](https://user-images.githubusercontent.com/84801914/150454740-be034321-d8d9-45eb-bad0-920a1f4da4d2.png)
 
 
+# CLASE 10 - INCORPORAR EVENTOS (proyecto final)
+
+>> Consigna: Con lo que vimos sobre DOM, ahora puedes sumarlo a tu proyecto, para interactuar entre los elementos HTML y JS. Es decir, asociar eventos que buscamos controlar sobre los elementos  de la interfaz de nuestro simulador
+>>Aspectos a incluir en el entregable:
+Archivo HTML y Archivo JS, referenciado en el HTML por etiqueta <script src="js/miarchivo.js"></script>, que incluya la definición de un algoritmo en JavaScript que opere sobre el DOM manejando eventos.
+>>Ejemplo:
+Cuando el usuario completa algún dato, por ejemplo cantidad de cuotas, se captura ese dato y se agregan elementos al DOM mediante JS.
+Capturar la tecla ENTER para confirmar alguna acción.
+
+
+## Aclaraciones
+
+Interactuar por el momento solo cambiando Etherums a otras monedas, es decir el option 1 dejarlo en etherum. 
+Cuando se ingrese el valor y se haga click, se va a agregar el valor convertido a un div abajo.
+Si se hace click en enter se muestra un alert informando que se apreto enter. Acá necesito saber cómo puedo importar ese código para usarlo en addEventListener('click) y ('keypress'). Probe con type="modules". Lo agregue a mi archivo package.json, pero me tira que require no se acepta y también probe cambiando mi archivo a ES6 para usar import {asdas} from './', **pero tampoco me funcaaaaa** :'(  😒😒😒😒😒
+
+## Probar como si fuera un celular.
+
+### Dejo pasos de la tarea
+
+![clase10-1](https://user-images.githubusercontent.com/84801914/151087805-670718b5-74b3-4ce2-b20a-838d2f1a7044.png)
+
+
+![clase 10-2](https://user-images.githubusercontent.com/84801914/151087811-1b8a5d3e-7778-4106-b830-0fef97141d64.png)
+
+
+![clase 10 3](https://user-images.githubusercontent.com/84801914/151087817-7e76ba06-e13d-49e6-afb3-0313d036326a.png)
+
 
