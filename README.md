@@ -107,7 +107,7 @@ Modificar etiquetas existentes en función del resultado de operaciones.
 ![asdasd2](https://user-images.githubusercontent.com/84801914/150454740-be034321-d8d9-45eb-bad0-920a1f4da4d2.png)
 
 
-# CLASE 10 - INCORPORAR EVENTOS (proyecto final)
+# CLASE 9 - INCORPORAR EVENTOS (proyecto final)
 
 >> Consigna: Con lo que vimos sobre DOM, ahora puedes sumarlo a tu proyecto, para interactuar entre los elementos HTML y JS. Es decir, asociar eventos que buscamos controlar sobre los elementos  de la interfaz de nuestro simulador
 >>Aspectos a incluir en el entregable:
@@ -134,5 +134,25 @@ Si se hace click en enter se muestra un alert informando que se apreto enter. Ac
 
 
 ![clase 10 3](https://user-images.githubusercontent.com/84801914/151087817-7e76ba06-e13d-49e6-afb3-0313d036326a.png)
+
+# CLASE 10 - Segunda Entrega Proyecto Final 
+
+>>Objetivos Generales:
+Codificar funciones de procesos esenciales y notificación de resultados por HTML, añadiendo interacción al simulador. 
+Ampliar y refinar el flujo de trabajo del script en términos de captura de eventos, procesamiento del simulador y notificación de resultados en forma de salidas por HTML, modificando el DOM.
+>>Objetivos Específicos:
+Definir eventos a manejar y su funciòn de respuesta.
+Declarar una estructura de datos de tipo JSON, para definir datos iniciales a consumir por el simulador.
+Modificar el DOM, ya sea para definir elementos al cargar la página o para realizar salidas de un procesamiento.
+Almacenar datos (clave-valor) en el Storage y recuperarlos.
+
+![clase 10 4](https://user-images.githubusercontent.com/84801914/151467909-0246ae34-71c8-4088-a1dd-0451f682d7bd.png)
+
+![clase 10 5](https://user-images.githubusercontent.com/84801914/151467915-894803fc-268c-4cf6-8ccf-944d809dcbfb.png)
+
+![clase 10 6](https://user-images.githubusercontent.com/84801914/151467917-05708750-50d4-4561-af4c-558a16ad9b85.png)
+
+###
+Lo importante son los archivos register.js, login.js y dashboard.js. Allí es donde están los objetivos de esta entrega, sin embargo toda la app está trabajandose con los objetivos mencionados. 
 
 
